@@ -40,6 +40,6 @@ public class Flower extends Element {
 	
 	@Override
 	public String toString(){
-		return super.toString() + " (запах: "+this.smell+")";
+		return super.toString() + " (Р·Р°РїР°С…: "+this.smell+")";
 	}
 }

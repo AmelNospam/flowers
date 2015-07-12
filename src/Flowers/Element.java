@@ -4,7 +4,7 @@
 package Flowers;
 
 /**
- * @author Олексій
+ * @author СњР»РµРєСЃв‰ҐР№
  * 
  */
 public abstract class Element implements Comparable{
@@ -51,6 +51,6 @@ public abstract class Element implements Comparable{
 	
 	@Override
 	public String toString(){
-		return this.name + ", по " + this.price + " грн, цвета: " + this.color + ", размером: " + this.size + " см.";
+		return this.name + ", РїРѕ " + this.price + " РіСЂРЅ, С†РІРµС‚Р°: " + this.color + ", СЂР°Р·РјРµСЂРѕРј: " + this.size + " СЃРј.";
 	}
 }
