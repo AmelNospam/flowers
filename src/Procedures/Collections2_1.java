@@ -14,16 +14,16 @@ import java.util.TreeSet;
  *
  * @author Олексій
  */
-public class Collections2 {
+public class Collections2_1 {
 
     private static NavigableSet<Integer> set;
 
     public static void main(String ... args) {
         set = new TreeSet<Integer>();
-        //checkSet(1000, 66, 33);
-        checkSet(1000, 666, 33);
-        //checkSet(10, 6, 3);
-        //checkSet(100, 66, 33);
+        checkSet(1000, 66, 33);
+        checkSet(1000, 666, 333);
+        checkSet(10, 6, 3);
+        checkSet(100, 66, 33);
     }
     
     private static void checkSet(Integer size, Integer nextTo, Integer prevTo){
@@ -56,22 +56,12 @@ public class Collections2 {
     private static Integer getNextElem(Integer elem) {
         for (Iterator<Integer> iterator = set.iterator(); iterator.hasNext();) {
             Integer current = iterator.next();
-            if (current == elem) {
-//            if ((int) current == (int) elem) {
-                System.out.println("Yes! " + current);
+            if (current.equals(elem)) {
                 if (iterator.hasNext()) {
                     return iterator.next();
                 } else {
                     return null;
                 }
-            } else {
-//                if (current < elem) {
-//                    System.out.printf("_%d<%d%n",current,elem);
-//                } else if(current > elem){
-//                    System.out.printf("_%d>%d%n",current,elem);
-//                } else {
-//                    System.out.printf("_%d==%d%n",current,elem);
-//                }
             }
         }
         System.out.println();
