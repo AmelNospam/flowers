@@ -51,7 +51,7 @@ public class Task1 {
         for (String line : lines) {
             String dt = "";
             for(int index = 8; index < 11; index++){
-                String tmp = line[index];
+                String tmp = line.substring(index,index);
                 if (" ".equals(tmp)) {
                     dt = line.substring(0, index-1);
                 }
